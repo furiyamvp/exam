@@ -1,0 +1,46 @@
+{% load static %}
+<div class="container section" id="menu" data-aos="fade-up">
+        <div class="title-block">
+            <h1 class="section-title">Our Menus</h1>
+        </div>
+
+        <!--    Menus filter    -->
+        {% include 'layouts/products_filter.html' %}
+
+        <!--    Menus items     -->
+        <div id="menu_items">
+            <div class="filtr-item image filter burger active">
+                <div class="row">
+                    {% for products in product %}
+                    <div class="col-sm-6">
+                        <a href="{{ products.photo.url }}" class="block fancybox" data-fancybox-group="fancybox">
+                            <div class="content">
+                                <div class="filter_item_img">
+                                    <i class="fa fa-search-plus"></i>
+                                    <img src="{{ products.photo.url }}" alt="sample"/>
+                                </div>
+                                <div class="info">
+                                    <div class="name">{{ products.title }}</div>
+                                    <div class="short">{{ products.short_description }}</div>
+                                    <span class="filter_item_price">${{ products.price }}</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+
+            <div class="text-center">
+                <!-- BEGIN pagination -->
+                <ul class="pagination">
+                    <li class="active"><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                </ul>
+                <!-- END pagination -->
+            </div>
+
+        </div>
+    </div>

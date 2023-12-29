@@ -1,0 +1,22 @@
+{% load static %}
+<div class="container section" id="gallery" data-aos="fade-up">
+        <div class="title-block">
+            <h1 class="section-title">Gallery</h1>
+        </div>
+        <div id="photo_gallery" class="list1">
+            <div class="row loadMore">
+                {% for photo in photos %}
+                <div class="col-sm-4 col-md-3 item">
+                    <a href="{{ photo.photo.url }}" class="block fancybox" data-fancybox-group="fancybox">
+                        <div class="content">
+                            <img src="{{ photo.photo.url }}" alt="sample"/>
+                            <div class="zoom">
+                                <span class="zoom_icon"><i class="fa fa-search-plus"></i></span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>

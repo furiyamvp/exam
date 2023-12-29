@@ -1,0 +1,10 @@
+{% load static %}
+<div class="menu_filter text-center">
+            <ul class="list-unstyled list-inline d-inline-block">
+                {% for category in categories %}
+                <li class="item active">
+                    <a href="?cat={{ category.pk }}" class="filter-button" data-filter="burger">{{ category.title }}</a>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>

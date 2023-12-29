@@ -1,0 +1,148 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="zxx" dir="ltr">
+
+<!-- BEGIN head -->
+
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8"/><!-- /Added by HTTrack -->
+<head>
+
+    <!-- Meta tags -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Butazzo Pizza - Restaurant, Cafe, Fast Food business HTML5 Responsive, CSS3 One Page Template</title>
+
+    <!-- Stylesheets -->
+    <link href="{% static 'css/bootstrap.min.css' %}" type="text/css" rel="stylesheet" media="all"/>
+    <link href="{% static 'css/bootstrap-theme.min.css' %}" type="text/css" rel="stylesheet" media="all"/>
+    <link href="{% static 'css/fonts.css' %}" type="text/css" rel="stylesheet"/>
+    <link href="{% static 'css/font-awesome.min.css' %}" type="text/css" rel="stylesheet"/>
+    <link href="{% static 'css/slick.css' %}" type="text/css" rel="stylesheet"/>
+    <link href="{% static 'css/slick-theme.css' %}" type="text/css" rel="stylesheet"/>
+    <link href="{% static 'css/aos.css' %}" type="text/css" rel="stylesheet"/>
+    <link href="{% static 'css/scrolling-nav.css' %}" type="text/css" rel="stylesheet"/>
+    <link href="{% static 'css/bootstrap-datepicker.css' %}" type="text/css" rel="stylesheet"/>
+    <link href="{% static 'css/bootstrap-datetimepicker.css' %}" type="text/css" rel="stylesheet"/>
+    <link href="{% static 'css/touch-sideswipe.css' %}" type="text/css" rel="stylesheet"/>
+    <link href="{% static 'css/jquery.fancybox.css' %}" type="text/css" rel="stylesheet"/>
+    <link href="{% static 'css/main.css' %}" type="text/css" rel="stylesheet"/>
+    <link href="{% static 'css/responsive.css' %}" type="text/css" rel="stylesheet"/>
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="{% static 'img/favicon/apple-touch-icon.png' %}"/>
+    <link rel="icon" type="image/png" sizes="256x256" href="{% static 'img/favicon/android-chrome-256x256.png' %}">
+    <link rel="icon" type="image/png" sizes="192x192" href="{% static 'img/favicon/android-chrome-192x192.png' %}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{% static 'img/favicon/favicon-32x32.png' %}"/>
+    <link rel="icon" type="image/png" sizes="16x16" href="{% static 'img/favicon/favicon-16x16.png' %}"/>
+    <link rel="icon" type="image/png" href="{% static 'img/favicon/favicon.ico' %}"/>
+    <link rel="manifest" href="{% static 'img/site.html' %}"/>
+    <link rel="mask-icon" href="{% static 'img/favicon/safari-pinned-tab.svg' %}" color="#5bbad5"/>
+    <meta name="msapplication-TileColor" content="#990100"/>
+    <meta name="theme-color" content="#ffffff"/>
+
+</head>
+<!-- END head -->
+
+<!-- BEGIN body -->
+
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+
+<!-- BEGIN  Loading Section -->
+<div class="loading-overlay">
+    <div class="spinner">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+</div>
+<!-- END Loading Section -->
+
+<!-- BEGIN body wrapper -->
+<div class="body-wrapper">
+
+    <!-- Begin header-->
+    {% include 'layouts/header.html' %}
+
+    <!-- Begin Sections-->
+
+    <!--    About Us    -->
+    {% include 'layouts/about_use.html' %}
+
+    <!--    Menus   -->
+    {% include 'layouts/products.html' %}
+
+    <!--    Reservation    -->
+    {% include 'layouts/reservation.html' %}
+
+
+    <!--    Gallery    -->
+    {% include 'layouts/gallery.html' %}
+</div>
+
+<!-- End Sections -->
+
+<!--  Begin Footer  -->
+    {% include 'layouts/footer.html' %}
+
+
+<!-- START mobile right burger menu -->
+
+<nav class="cd-nav-container right_menu" id="cd-nav">
+    <div class="header__open_menu">
+        <a href="index-2.html" class="rmenu_logo" title="yagmurmebel.az">
+            <img src="{% static 'img/logo.png' %}" alt="logo"/>
+        </a>
+    </div>
+    <div class="right_menu_search">
+        <form method="post">
+            <input type="text" name="q" class="form-control search_input" value="" placeholder="Search anything">
+            <button type="submit" class="search_icon"><i class="fa fa-search"></i></button>
+        </form>
+    </div>
+    <ul class="rmenu_list">
+        <li><a class="page-scroll" href="#header">Home</a></li>
+        <li><a class="page-scroll" href="#about_us">About</a></li>
+        <li><a class="page-scroll" href="#menu">Menus</a></li>
+        <li><a class="page-scroll" href="#gallery">Gallery</a></li>
+        <li><a class="page-scroll" href="#reservation">Reservation</a></li>
+        <li><a class="page-scroll" href="#footer">Contact</a></li>
+    </ul>
+    <div class="right_menu_addr top_addr">
+        <span><i class="fa fa-map-marker" aria-hidden="true"></i> Your country, your city, 12345</span>
+        <span><i class="fa fa-phone" aria-hidden="true"></i> 123 456 789</span>
+        <span><i class="fa fa-clock-o" aria-hidden="true"></i> 11:00 - 21:00</span>
+    </div>
+</nav>
+
+<div class="cd-overlay"></div>
+<!-- /.cd-overlay -->
+
+
+<!-- END mobile right burger menu -->
+
+<!-- JavaScript -->
+<script src="{% static 'js/jquery-2.1.1.min.js' %}"></script>
+<script src="{% static 'js/bootstrap.min.js' %}"></script>
+<script src="{% static 'js/jquery.mousewheel.min.js' %}"></script>
+<script src="{% static 'js/jquery.easing.min.js' %}"></script>
+<script src="{% static 'js/scrolling-nav.js' %}"></script>
+<script src="{% static 'js/aos.js' %}"></script>
+<script src="{% static 'js/slick.min.js' %}"></script>
+<script src="{% static 'js/jquery.touchSwipe.min.js' %}"></script>
+<script src="{% static 'js/moment.js' %}"></script>
+<script src="{% static 'js/bootstrap-datepicker.js' %}"></script>
+<script src="{% static 'js/bootstrap-datetimepicker.js' %}"></script>
+<script src="{% static 'js/jquery.fancybox.js' %}"></script>
+<script src="{% static 'js/loadMoreResults.js' %}"></script>
+<script src="{% static 'js/main.js' %}"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBcg5Y2D1fpGI12T8wcbtPIsyGdw-_NV1Y&amp;callback=myMap"></script>
+
+</body>
+
+</html> 
